@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.psaltech.mlm.Registration">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/space3"
+        android:paddingLeft="@dimen/space3"
+        android:paddingRight="@dimen/space3"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID Number:"
+                android:textSize="@dimen/h3"/>
+            <EditText
+                android:id="@+id/et_id_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space2"
+                android:hint="ID Number"
+                style="@style/EditText"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Times Engaged:"
+                android:textSize="@dimen/h3"
+                android:maxLines="2"/>
+            <EditText
+                android:id="@+id/et_child_times_engaged"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space2"
+                android:hint="Times Engaged"
+                style="@style/EditText"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:textSize="@dimen/h3" />
+
+            <EditText
+                android:id="@+id/et_name"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:padding="@dimen/space2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile No.:"
+                android:textSize="@dimen/h3"/>
+            <EditText
+                android:id="@+id/et_mobile_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space2"
+                android:hint="Mobile No."
+                style="@style/EditText"
+                android:inputType="phone"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sponsor ID:"
+                android:textSize="@dimen/h3"/>
+            <EditText
+                android:id="@+id/et_sponsor_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space2"
+                android:hint="Sponsor ID"
+                style="@style/EditText"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Times Engaged:"
+                android:textSize="@dimen/h3"/>
+            <EditText
+                android:id="@+id/et_sponsor_times_engaged"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space2"
+                android:hint="Times Engaged"
+                style="@style/EditText"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space5"
+            android:layout_marginLeft="@dimen/space5"
+            android:layout_marginRight="@dimen/space5"
+            android:background="@drawable/bt_register"
+            android:text="Register"
+            android:onClick="onRegister"
+            android:textColor="@color/whiteGrey"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

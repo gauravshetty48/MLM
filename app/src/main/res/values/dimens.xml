@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="space1">5dp</dimen>
+    <dimen name="space2">10dp</dimen>
+    <dimen name="space3">15dp</dimen>
+    <dimen name="space4">20dp</dimen>
+    <dimen name="space5">7dp</dimen>
+    <dimen name="leftright">40dp</dimen>
+    <dimen name="h1">22sp</dimen>
+    <dimen name="h2">20sp</dimen>
+    <dimen name="h3">18sp</dimen>
+    <dimen name="h4">16sp</dimen>
+    <dimen name="h5">14sp</dimen>
+    <dimen name="h6">12sp</dimen>
+    <dimen name="h7">11sp</dimen>
+</resources>

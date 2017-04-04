@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="whiteGrey">#F8F8F8</color>
+    <color name="grey">#D6D6D6</color>
+    <color name="divider">#EDEDED</color>
+    <color name="textDark">#747474</color>
+    <color name="textBlack">#4A4A4A</color>
+    <color name="textHint">#D3D3D3</color>
+    <color name="textHintHome">#9B9B9B</color>
+    <color name="greenDark">#07B58E</color>
+    <color name="greenLight">#7ED321</color>
+    <color name="pink">#FE5A7E</color>
+    <color name="pinktrans">#E6FE5A7E</color>
+    <color name="foreground_material_light">#828282</color>
+    <color name="accent_material_light">#ffbb40</color>
+    <color name="orange">#FA8857</color>
+    <color name="orangeLight">#FFA209</color>
+    <color name="orangeDark">#F46E34</color>
+    <color name="navyLight">#34CEAC</color>
+    <color name="navyDark">#07B58E</color>
+    <color name="notifBackground">#7451e0</color>
+
+</resources>
