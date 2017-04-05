@@ -9,4 +9,4 @@
 .externalNativeBuild
 .idea/vcs.xml
 app/libs/
-app/src/main/java/com/psaltech/mlm/Registration.java
+app/src/main/java/com/psaltech/mlm/AppConstants.java
