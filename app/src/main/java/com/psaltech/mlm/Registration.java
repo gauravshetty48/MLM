@@ -69,6 +69,17 @@ public class Registration extends AppCompatActivity {
                     public void onErrorResponse(VolleyError error) {
                         // error
                         Log.d("Error.Response", error.toString());
+                        payDialog = new AlertDialog.Builder(Registration.this);
+                        LayoutInflater inflater = (LayoutInflater) Registration.this.getSystemService(LAYOUT_INFLATER_SERVICE);
+
+                        View layout = inflater.inflate(R.layout.dialog_pay,
+                                null);
+                        pay = (TextView) layout.findViewById(R.id.tv_pay);
+                        pay.setText(error.toString());
+                        payDialog.setView(layout);
+
+                        payDialog.create();
+                        payDialog.show();
                     }
                 }
         ) {
