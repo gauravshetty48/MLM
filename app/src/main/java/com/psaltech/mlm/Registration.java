@@ -41,7 +41,7 @@ public class Registration extends AppCompatActivity {
         sponsorID = (EditText) findViewById(R.id.et_sponsor_id);
 
         RequestQueue queue = Volley.newRequestQueue(this); // this = context
-        String url = "http://httpbin.org/post";
+        String url = "http://clients.psaltech.com/multiplier/post-script.php";
         StringRequest postRequest = new StringRequest(Request.Method.POST, url,
                 new Response.Listener<String>()
                 {
