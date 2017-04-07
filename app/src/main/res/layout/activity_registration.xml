@@ -29,7 +29,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/space2"
+                android:inputType="number"
                 android:hint="ID Number"
+                android:maxLength="13"
                 style="@style/EditText"/>
         </LinearLayout>
         <LinearLayout
@@ -48,6 +50,8 @@
                 android:layout_height="wrap_content"
                 android:padding="@dimen/space2"
                 android:hint="Times Engaged"
+                android:inputType="number"
+                android:maxLength="3"
                 style="@style/EditText"/>
         </LinearLayout>
 
@@ -104,6 +108,8 @@
                 android:layout_height="wrap_content"
                 android:padding="@dimen/space2"
                 android:hint="Sponsor ID"
+                android:inputType="number"
+                android:maxLength="13"
                 style="@style/EditText"/>
         </LinearLayout>
         <LinearLayout
@@ -121,6 +127,8 @@
                 android:layout_height="wrap_content"
                 android:padding="@dimen/space2"
                 android:hint="Times Engaged"
+                android:inputType="number"
+                android:maxLength="3"
                 style="@style/EditText"/>
         </LinearLayout>
         <Button
