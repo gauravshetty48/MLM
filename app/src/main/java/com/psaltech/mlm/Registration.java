@@ -1,5 +1,6 @@
 package com.psaltech.mlm;
 
+import android.app.ProgressDialog;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -25,6 +26,7 @@ public class Registration extends AppCompatActivity {
     EditText idNumber, mobile, name, childTimesEngaged, sponsorTimesEngaged, sponsorID;
     TextView pay;
     AlertDialog.Builder payDialog;
+    ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,9 @@ public class Registration extends AppCompatActivity {
     }
 
     public void onRegister(View view) {
+        progressDialog.setMessage("Please Wait..");
+        progressDialog.setCancelable(false);
+        progressDialog.show();
         idNumber = (EditText) findViewById(R.id.et_id_number);
         mobile = (EditText) findViewById(R.id.et_mobile_number);
         name = (EditText) findViewById(R.id.et_name);
@@ -49,6 +54,7 @@ public class Registration extends AppCompatActivity {
                     public void onResponse(String response) {
                         // response
                         Log.d("Response", response);
+                        progressDialog.hide();
 
                         payDialog = new AlertDialog.Builder(Registration.this);
                         LayoutInflater inflater = (LayoutInflater) Registration.this.getSystemService(LAYOUT_INFLATER_SERVICE);
@@ -69,6 +75,7 @@ public class Registration extends AppCompatActivity {
                     public void onErrorResponse(VolleyError error) {
                         // error
                         Log.d("Error.Response", error.toString());
+                        progressDialog.hide();
                         payDialog = new AlertDialog.Builder(Registration.this);
                         LayoutInflater inflater = (LayoutInflater) Registration.this.getSystemService(LAYOUT_INFLATER_SERVICE);
 
