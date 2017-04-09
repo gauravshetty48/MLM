@@ -35,6 +35,7 @@ public class Registration extends AppCompatActivity {
     }
 
     public void onRegister(View view) {
+        progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Please Wait..");
         progressDialog.setCancelable(false);
         progressDialog.show();
