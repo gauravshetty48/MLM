@@ -67,6 +67,14 @@ public class Registration extends AppCompatActivity {
                         payDialog.setView(layout);
 
                         payDialog.create();
+
+                        idNumber.setText("");
+                        mobile.setText("");
+                        name.setText("");
+                        childTimesEngaged.setText("");
+                        sponsorTimesEngaged.setText("");
+                        sponsorID.setText("");
+
                         payDialog.show();
                     }
                 },
@@ -85,8 +93,15 @@ public class Registration extends AppCompatActivity {
                         pay = (TextView) layout.findViewById(R.id.tv_pay);
                         pay.setText(error.toString());
                         payDialog.setView(layout);
-
                         payDialog.create();
+
+                        idNumber.setText("");
+                        mobile.setText("");
+                        name.setText("");
+                        childTimesEngaged.setText("");
+                        sponsorTimesEngaged.setText("");
+                        sponsorID.setText("");
+
                         payDialog.show();
                     }
                 }
